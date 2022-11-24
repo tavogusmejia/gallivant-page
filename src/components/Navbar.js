@@ -3,12 +3,25 @@ import {Link} from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars, faGear, faTimes} from '@fortawesome/free-solid-svg-icons'
 import {faYoutube, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {Button} from './Button'
+import './Navbar.css'
 
 function Navbar() {
   const [click,setClick] = useState(false)
+  const [button, setButton] = useState(true)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
+
+  const showButton = () => {
+    if(window.innerWidth <=960){
+      setButton(false)
+    } else {
+      setButton(true)
+    }
+  }
+
+  window.addEventListener('resize', showButton)
 
   return (
     <>
@@ -16,7 +29,8 @@ function Navbar() {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           ISOE 
-          <FontAwesomeIcon icon={faGear}></FontAwesomeIcon>
+          {/* <FontAwesomeIcon icon={faGear}></FontAwesomeIcon> */}
+          <i className='fas fa-cog'/>
         </Link>
         <div className='menu-icon' onClick={handleClick}>
         <i className={click ? 'fas fa-times':'fas fa-bars'}/>
@@ -43,10 +57,11 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+        {button && <Button buttonStyle='btn--outline'>SING UP</Button>}
       </div>
     </nav>
     </>
   )
 }
 
-export default Navbar
+export default Navbar;
