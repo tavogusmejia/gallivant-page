@@ -7,7 +7,9 @@
   
   .home,
   .services,
-  .products,
+  .aboutus,
+  .projects,
+  .contact,
   .sign-up {
     display: flex;
     height: 90vh;
@@ -17,7 +19,34 @@
   }
   
   .services {
+    background-image: url('/public/images/img-9.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .aboutus {
     background-image: url('/public/images/img-2.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .projects {
+    background-image: url('/public/images/img-3.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .contact {
+    background-image: url('/public/images/img-4.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,14 +54,7 @@
     font-size: 100px;
   }
   
-  .products {
-    background-image: url('/public/images/img-1.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
+
   
   .sign-up {
     background-image: url('/public/images/img-8.jpg');
