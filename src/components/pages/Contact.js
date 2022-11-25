@@ -2,5 +2,7 @@ import React from 'react'
 import'../../App.css'
 
 export default function Contact(){
-    return <h1 className="contact">CONTACTO</h1>
+    return <div className='contact'>
+        <h1 className='rotateText'>CONTACTS</h1>
+        </div>
 }

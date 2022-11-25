@@ -29,8 +29,7 @@ function Footer() {
         <div className="footer-link-wrapper">
             <div className="footer-link-items">
             <h2>About Us</h2>
-            <Link to='/SignUp'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
+            <Link to='/AboutUs'>Dream team</Link>
             <Link to='/'>Careers</Link>
             <Link to='/'>Investors</Link>
             <Link to='/'>Terms of Service</Link>
@@ -64,7 +63,7 @@ function Footer() {
         <div className="social-media-wrap">
             <div className="footer-logo">
                 <Link className="social-logo">
-                    ISOE <i className="fas fa-cog"/>
+                    GALLIVANT <i className="far fa-map"/>
                 </Link>
             </div>
         </div>
@@ -115,7 +114,7 @@ function Footer() {
       </section>
       <section>
         <div>
-      <small className="website-rights">ISOE © 2022</small>
+      <small className="website-rights">GALLIVANT by GAMUT © 2022</small>
         </div>
       </section>
     </div>

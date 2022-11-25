@@ -29,8 +29,8 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            ISOE
-            <i className="fas fa-cog" />
+            GALLIVANT
+            <i className="far fa-map" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -38,7 +38,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Inicio
+                Home
               </Link>
             </li>
             <li className="nav-item">
@@ -47,25 +47,17 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Servicios
+                Services
               </Link>
             </li>
+            
             <li className="nav-item">
               <Link
-                to="/AboutUs"
+                to="/Spots"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Nosotros
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/Projects"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Proyectos
+                Spots
               </Link>
             </li>
             <li className="nav-item">
@@ -74,7 +66,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Contacto
+                Contact
               </Link>
             </li>
             <li>
@@ -83,11 +75,11 @@ function Navbar() {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Iniciar Sesión
+                Sign Up
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">INICIAR SESIÓN</Button>}
+          {button && <Button buttonStyle="btn--outline">Sign Up</Button>}
         </div>
       </nav>
     </>
