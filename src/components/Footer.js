@@ -67,7 +67,8 @@ function Footer() {
                     ISOE <i className="fas fa-cog"/>
                 </Link>
             </div>
-            <small className="website-rights">ISOE © 2022</small>
+        </div>
+        <div className="social-media-wrap">
             <div className="social-icons">
               <Link className="social-icon-link facebook"
               to='/'
@@ -109,6 +110,12 @@ function Footer() {
               <i class='fab fa-linkedin' />
             </Link>
             </div>
+            </div>
+        
+      </section>
+      <section>
+        <div>
+      <small className="website-rights">ISOE © 2022</small>
         </div>
       </section>
     </div>
