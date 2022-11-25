@@ -2,4 +2,9 @@
     "emmet.preferences": {
     },
     "emmet.includeLanguages": {"javascript":"javascriptreact"}
+
+    //"terminal.integrated.fontFamily": "'Ubuntu Mono derivative Powerline', 'fontawesome'",
+    //"terminal.integrated.fontFamily": "'Meslo LG M DZ for Powerline', 'fontawesome'",
+    "terminal.integrated.fontFamily": "'Fira Code', monospace",
+    "terminal.integrated.fontSize": 14
 }
